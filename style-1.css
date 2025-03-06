@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/cafeteria-contemporanea-elegancia-moderna-diseno.png);
+  background-repeat: repeat;
+}
+
+.form-register {
+  width: 400px;
+  background: linear-gradient(135deg, #2c2c2c, #1a1a1a); /* Degradado oscuro */
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 8px; /* Bordes un poco más redondeados */
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra más suave */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #d2b48c; /* Tono dorado claro */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.controls {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Fondo oscuro transparente */
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: #d2b48c; /* Tono dorado claro */
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: linear-gradient(to bottom, #795548, #5d4037); /* Degradado para el botón */
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}

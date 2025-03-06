@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/cafeteria-contemporanea-elegancia-moderna-diseno.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #D4AF37;
+    margin: 0; /* Asegura que no haya márgenes predeterminados en el body */
+    padding: 0; /* Asegura que no haya padding predeterminado en el body */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Añade margen superior e inferior para separar del borde */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px; /* Añade padding dentro del contenedor */
+}
+
+h1 {
+    text-align: center;
+    color: #FFD700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.client-info, .order-summary {
+    width: 48%; /* Ajusta el ancho para que quepan dos columnas */
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #A0522D;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+    width: calc(100% - 22px); /* Ajusta el ancho para compensar el padding y el borde */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo ligeramente transparente */
+    color: #333;
+}
+
+input[type="text"][readonly], input[type="number"][readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.product-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-info img {
+    margin-right: 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.payment-methods h3 {
+    margin-top: 20px;
+}
+
+.payment-methods label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #D2691E;
+    color: #FFD700;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #A0522D; /* Oscurece el botón al pasar el ratón */
+}
+
+/* Estilos para los iconos de Font Awesome */
+.fas {
+    margin-right: 5px;
+    color: #A0522D; /* Color café para los iconos */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .order-container {
+        flex-direction: column;
+    }
+
+    .client-info, .order-summary {
+        width: 100%;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago de Café Helado</title>
+    <link rel="stylesheet" href="style-5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/café.ico">
+    <style>
+        .payment-methods a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Realizar Pago de Bebida de Café</h1>
+        <div class="order-container">
+            <div class="client-info">
+                <h2>Información del Cliente</h2>
+                <div class="form-group">
+                    <label for="cliente"><i class="fas fa-user"></i> Nombre Completo:</label>
+                    <input type="text" id="cliente" name="cliente" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono"><i class="fas fa-phone"></i> Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label for="direccion"><i class="fas fa-map-marker-alt"></i> Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+                </div>
+            </div>
+            <div class="order-summary">
+                <h2>Resumen del Pedido</h2>
+                <div class="product-info">
+                    <img id="product-image" src="images/cafe-helado.jpg" alt="Café Helado" style="max-width: 100px; height: auto;">
+                    <p>Producto: <span id="product-name">Café Helado</span></p>
+                </div>
+                <p>Tamaño: Mediano</p>
+                <div class="form-group">
+                    <label for="precio">Precio Unitario:</label>
+                    <input type="text" id="precio" name="precio" value="$8.50" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="subtotal">Subtotal:</label>
+                    <input type="text" id="subtotal" name="subtotal" value="$8.50" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="total">Total:</label>
+                    <input type="text" id="total" name="total" value="$8.50" readonly>
+                </div>
+                <div class="payment-methods">
+                    <h3>Métodos de Pago</h3>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="payment-method" value="cash" id="cash-payment" checked>
+                            Efectivo
+                        </label>
+                        <label>
+                                <input type="radio" name="payment-method" value="credit-card" id="credit-card-payment">
+                                Tarjeta de Crédito
+                            </a>
+                        </label>
+                    </div>
+                </div>
+
+                <button id="calcular-button">Calcular Pago Total</button>
+                <a href="tarjeta-credito.html"><button id="pay-button">Pagar Ahora</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="script-2.js"></script>
+</body>
+</html>

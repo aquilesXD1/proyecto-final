@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/cafeteria-contemporanea-elegancia-moderna-diseno.png);
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el body */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    color: #D4AF37; /* Color dorado para el texto principal */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    overflow: hidden;
+}
+
+.header-box {
+    background-color: #A0522D; /* Color café para el header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #8B4513; /* Borde café más oscuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+.header-box h1 {
+    margin: 0;
+    color: #FFD700; /* Color dorado para el título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+}
+
+.featured-coffee {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-box {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.featured-coffee img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra en la imagen */
+}
+
+.menu {
+    padding: 20px;
+}
+
+.menu h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #D4AF37; /* Color dorado para el subtítulo */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra en las imágenes del menú */
+}
+
+.menu-item-details {
+    flex-grow: 1;
+}
+
+.menu-item-details h3 {
+    margin: 0 0 5px;
+    color: #A0522D; /* Color café para los títulos de los items */
+}
+
+.radio-button {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #8B4513; /* Borde café oscuro */
+    border-radius: 50%;
+}
+
+.radio-button input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.radio-button label {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #FFD700; /* Color dorado para el círculo seleccionado */
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.radio-button input[type="radio"]:checked + label {
+    display: block;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.order-button {
+    background-color: #D2691E; /* Color café claro para el botón */
+    color: #FFD700; /* Color dorado para el texto del botón */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra más fuerte */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra en el texto del botón */
+}
